@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jan 10 17:46:44 2023
+# Process ID: 13188
+# Current directory: D:/projects/graduation project/Nexys-4-DDR-GPIO-2018.2-1/vivado_proj/Nexys-4-DDR-GPIO.runs/synth_1
+# Command line: vivado.exe -log GPIO_demo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source GPIO_demo.tcl
+# Log file: D:/projects/graduation project/Nexys-4-DDR-GPIO-2018.2-1/vivado_proj/Nexys-4-DDR-GPIO.runs/synth_1/GPIO_demo.vds
+# Journal file: D:/projects/graduation project/Nexys-4-DDR-GPIO-2018.2-1/vivado_proj/Nexys-4-DDR-GPIO.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source GPIO_demo.tcl -notrace

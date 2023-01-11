@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Oct 18 16:17:13 2018
+# Process ID: 7380
+# Current directory: C:/Users/arthur/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12504
+# Log file: C:/Users/arthur/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/arthur/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source D:/Experimental/custom_commands/setup.tcl
+digilent_vivado_checkin_proc
+digilent_vivado_checkout_proc "D:/Github/releases/in-work/Nexys-4-DDR/Nexys-4-DDR-OOB" 
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_rsource D:/Experimental/custom_commansource D:/Experimental/custom_commands/setup.tcl
+digilent_create_release
+
