@@ -16,7 +16,7 @@ module GPIO_demo(SW, BTN, CLK, LED, SSEG_CA, SSEG_AN, UART_TXD, RGB1_Red, RGB1_G
    output           RGB2_Blue;
    output           micClk;
    output           micLRSel;
-   input              micData;
+   input            micData;
    output           ampPWM;
    output           ampSD;
    
@@ -147,17 +147,17 @@ module GPIO_demo(SW, BTN, CLK, LED, SSEG_CA, SSEG_AN, UART_TXD, RGB1_Red, RGB1_G
         (btnReg[2] == 1'b0 & btnDeBnc[2] == 1'b1) | 
         (btnReg[3] == 1'b0 & btnDeBnc[3] == 1'b1))) ? 1'b1 : 1'b0;
    
-   
+/* 
 //----------------------------------------------------------
 //------              UART Control                   -------
 //----------------------------------------------------------
-   /*
+   
    Messages are sent on reset and when a button is pressed.
    This counter holds the UART state machine in reset for ~2 milliseconds.
    This will complete transmission of any byte that may have been initiated during
    FPGA configuration due to the UART_TX line being pulled low, preventing a
    frame shift error from occuring during the first message.
-   */
+   
    always @(posedge CLK)
       
       begin
@@ -259,13 +259,13 @@ module GPIO_demo(SW, BTN, CLK, LED, SSEG_CA, SSEG_AN, UART_TXD, RGB1_Red, RGB1_G
        .READY(uartRdy), 
        .UART_TX(uartTX));
    
-   assign UART_TXD = uartTX;
+   assign UART_TXD = uartTX;*/
    
    //RGB LED control
-   RGB_controller RGB_Core(
-       .GCLK(CLK), 
-       .RGB_LED_1_O({RGB1_Green, RGB1_Blue, RGB1_Red}), 
-       .RGB_LED_2_O({RGB2_Green, RGB2_Blue, RGB2_Red}));
+//   RGB_controller RGB_Core(
+//       .GCLK(CLK), 
+//       .RGB_LED_1_O({RGB1_Green, RGB1_Blue, RGB1_Red}), 
+//       .RGB_LED_2_O({RGB2_Green, RGB2_Blue, RGB2_Red}));
    
    
 //----------------------------------------------------------
@@ -290,8 +290,8 @@ module GPIO_demo(SW, BTN, CLK, LED, SSEG_CA, SSEG_AN, UART_TXD, RGB1_Red, RGB1_G
             pwm_val_reg <= micData;
       end
    
-   assign micLRSel = 1'b0;
+   //assign micLRSel = 1'b0;
    assign ampPWM = pwm_val_reg;
-   assign ampSD = 1'b1;
+   //assign ampSD = 1'b1;
    
 endmodule

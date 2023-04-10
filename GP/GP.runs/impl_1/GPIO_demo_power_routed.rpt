@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Wed Jan 11 00:57:44 2023
+| Date             : Wed Jan 11 20:52:38 2023
 | Host             : Sebastian running 64-bit major release  (build 9200)
 | Command          : report_power -file GPIO_demo_power_routed.rpt -pb GPIO_demo_power_summary_routed.pb -rpx GPIO_demo_power_routed.rpx
 | Design           : GPIO_demo
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.114        |
+| Total On-Chip Power (W)  | 0.112        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.017        |
+| Dynamic (W)              | 0.015        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 84.5         |
@@ -53,16 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      632 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      207 |     63400 |            0.33 |
-|   CARRY4       |    <0.001 |       63 |     15850 |            0.40 |
-|   Register     |    <0.001 |      278 |    126800 |            0.22 |
-|   F7/F8 Muxes  |    <0.001 |        1 |     63400 |           <0.01 |
-|   Others       |     0.000 |        8 |       --- |             --- |
-| Signals        |     0.001 |      554 |       --- |             --- |
-| I/O            |     0.013 |       66 |       210 |           31.43 |
+| Slice Logic    |    <0.001 |      265 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      116 |     63400 |            0.18 |
+|   CARRY4       |    <0.001 |       23 |     15850 |            0.15 |
+|   Register     |    <0.001 |      105 |    126800 |            0.08 |
+|   Others       |     0.000 |        4 |       --- |             --- |
+| Signals        |    <0.001 |      263 |       --- |             --- |
+| I/O            |     0.012 |       66 |       210 |           31.43 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.114 |          |           |                 |
+| Total          |     0.112 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.019 |       0.004 |      0.015 |
+| Vccint    |       1.000 |     0.018 |       0.003 |      0.015 |
 | Vccaux    |       1.800 |     0.019 |       0.000 |      0.018 |
-| Vcco33    |       3.300 |     0.008 |       0.004 |      0.004 |
+| Vcco33    |       3.300 |     0.007 |       0.003 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -141,8 +140,8 @@ Table of Contents
 +---------------------+-----------+
 | Name                | Power (W) |
 +---------------------+-----------+
-| GPIO_demo           |     0.017 |
-|   Inst_btn_debounce |     0.001 |
+| GPIO_demo           |     0.015 |
+|   Inst_btn_debounce |     0.002 |
 +---------------------+-----------+
 
 
