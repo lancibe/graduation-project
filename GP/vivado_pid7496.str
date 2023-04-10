@@ -1,0 +1,293 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 7496
+License: Customer
+
+Current time: 	Mon Apr 10 15:40:47 CST 2023
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 20
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 25 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	E:/vivado/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	E:/vivado/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	16095
+User home directory: C:/Users/16095
+User working directory: D:/projects/graduation project/GP
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: E:/vivado/Vivado
+HDI_APPROOT: E:/vivado/Vivado/2018.3
+RDI_DATADIR: E:/vivado/Vivado/2018.3/data
+RDI_BINDIR: E:/vivado/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/16095/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/16095/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/16095/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	E:/vivado/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	D:/projects/graduation project/GP/vivado.log
+Vivado journal file location: 	D:/projects/graduation project/GP/vivado.jou
+Engine tmp dir: 	D:/projects/graduation project/GP/.Xil/Vivado-7496-Sebastian
+
+Xilinx Environment Variables
+----------------------------
+XILINX: E:/vivado/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: E:/vivado/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: E:/vivado/Vivado/2018.3
+XILINX_SDK: E:/vivado/SDK/2018.3
+XILINX_VIVADO: E:/vivado/Vivado/2018.3
+XILINX_VIVADO_HLS: E:/vivado/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 597 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: D:\projects\graduation project\GP\GP.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {D:/projects/graduation project/GP/GP.xpr} 
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 1430ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1432 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 597 MB. GUI used memory: 44 MB. Current time: 4/10/23, 3:40:50 PM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {D:/projects/graduation project/GP/GP.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 96 MB (+97705kb) [00:00:40]
+// [Engine Memory]: 653 MB (+532752kb) [00:00:40]
+// [GUI Memory]: 103 MB (+2736kb) [00:00:42]
+// WARNING: HEventQueue.dispatchEvent() is taking  4659 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 679 MB. GUI used memory: 50 MB. Current time: 4/10/23, 3:41:14 PM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:29 . Memory (MB): peak = 723.652 ; gain = 66.426 
+// Project name: GP; location: D:/projects/graduation project/GP; part: xc7a100tcsg324-1
+// [Engine Memory]: 701 MB (+16794kb) [00:00:44]
+dismissDialog("Open Project"); // bx (cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // B (D, cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (gpio_demo.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, GPIO_demo (gpio_demo.v)]", 1, true); // B (D, cp) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, GPIO_demo (gpio_demo.v)]", 1); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, GPIO_demo (gpio_demo.v)]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, cp) - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "temp"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// Tcl Command: 'file mkdir D:/projects/graduation project/GP/GP.srcs/sources_1/new'
+dismissDialog("Create Source File"); // F (c)
+// Tcl Message: file mkdir D:/projects/graduation project/GP/GP.srcs/sources_1/new 
+// Tcl Message: can't create directory "D:/projects/graduation": file already exists 
+// Tcl Command: 'file mkdir D:/projects/graduation project/GP/GP.srcs/sources_1/new'
+// Tcl Message: file mkdir D:/projects/graduation project/GP/GP.srcs/sources_1/new 
+// Tcl Message: can't create directory "D:/projects/graduation": file already exists 
+// Tcl Command: 'file mkdir D:/projects/graduation project/GP/GP.srcs/sources_1/new'
+// Tcl Command: 'file mkdir D:/projects/graduation project/GP/GP.srcs/sources_1/new'
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// Tcl Command: 'file mkdir D:/projects/graduation project/GP/GP.srcs/sources_1/new'
+// 'h' command handler elapsed time: 17 seconds
+// Tcl Message: file mkdir D:/projects/graduation project/GP/GP.srcs/sources_1/new 
+// Tcl Message: can't create directory "D:/projects/graduation": file already exists 
+// Tcl Message: file mkdir D:/projects/graduation project/GP/GP.srcs/sources_1/new 
+// Tcl Message: can't create directory "D:/projects/graduation": file already exists 
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: file mkdir D:/projects/graduation project/GP/GP.srcs/sources_1/new 
+// Tcl Message: can't create directory "D:/projects/graduation": file already exists 
+// Tcl Command: 'file mkdir D:/projects/graduation project/GP/GP.srcs/sources_1/new'
+// Tcl Message: file mkdir D:/projects/graduation project/GP/GP.srcs/sources_1/new 
+// Tcl Message: can't create directory "D:/projects/graduation": file already exists 
+// Tcl Message: file mkdir {D:/projects/graduation project/GP/GP.srcs/sources_1/new} 
+// Tcl Message: close [ open {D:/projects/graduation project/GP/GP.srcs/sources_1/new/temp.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{D:/projects/graduation project/GP/GP.srcs/sources_1/new/temp.v}} 
+// I (cp): Define Module: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 733 MB. GUI used memory: 54 MB. Current time: 4/10/23, 3:41:45 PM CST
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// [GUI Memory]: 114 MB (+6382kb) [00:01:18]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, temp (temp.v)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, temp (temp.v)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, temp (temp.v)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, temp (temp.v)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, temp (temp.v)]", 4, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("temp.v", 146, 449); // cl (w, cp)
+selectCodeEditor("temp.v", 175, 436); // cl (w, cp)
+selectCodeEditor("temp.v", 169, 471); // cl (w, cp)
+typeControlKey((HResource) null, "temp.v", 'v'); // cl (w, cp)
+// [Engine Memory]: 740 MB (+3691kb) [00:01:40]
+// Elapsed time: 19 seconds
+typeControlKey((HResource) null, "temp.v", 'v'); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("temp.v", 704, 478); // cl (w, cp)
+typeControlKey((HResource) null, "temp.v", 'v'); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("temp.v", 19, 473); // cl (w, cp)
+typeControlKey((HResource) null, "temp.v", 'v'); // cl (w, cp)
+// Elapsed time: 25 seconds
+typeControlKey((HResource) null, "temp.v", 'v'); // cl (w, cp)
+typeControlKey((HResource) null, "temp.v", 'v'); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("temp.v", 375, 443); // cl (w, cp)
+typeControlKey((HResource) null, "temp.v", 'v'); // cl (w, cp)
+selectCodeEditor("temp.v", 304, 439); // cl (w, cp)
+selectCodeEditor("temp.v", 304, 439, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("temp.v", 287, 452); // cl (w, cp)
+// Elapsed time: 76 seconds
+typeControlKey((HResource) null, "temp.v", 'v'); // cl (w, cp)
+// Elapsed time: 33 seconds
+typeControlKey((HResource) null, "temp.v", 'v'); // cl (w, cp)
+selectCodeEditor("temp.v", 357, 113); // cl (w, cp)
+selectCodeEditor("temp.v", 397, 464); // cl (w, cp)
+selectCodeEditor("temp.v", 275, 452); // cl (w, cp)
+typeControlKey((HResource) null, "temp.v", 'v'); // cl (w, cp)
+typeControlKey((HResource) null, "temp.v", 'v'); // cl (w, cp)
+selectCodeEditor("temp.v", 244, 364); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("temp.v", 267, 433); // cl (w, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  3909 ms.
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+// Elapsed time: 10 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+// Elapsed time: 35 seconds
+selectCodeEditor("temp.v", 231, 332); // cl (w, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // ac (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // X (q, cp)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // X (q, cp)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // X (q, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  3908 ms.
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // X (q, cp)
+selectButton(RDIResourceCommand.RDICommands_SETTINGS, "settings"); // B (f, cp)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// F (cp): Settings: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1804 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 775 MB. GUI used memory: 65 MB. Current time: 4/10/23, 3:47:40 PM CST
+// Elapsed time: 15 seconds
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor, Fonts and Colors]", 1, false); // L (C, F)
+// Elapsed time: 12 seconds
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (F)
+// [Engine Memory]: 781 MB (+4395kb) [00:07:35]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Settings"); // F (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 819 MB. GUI used memory: 75 MB. Current time: 4/10/23, 3:48:10 PM CST
+// [GUI Memory]: 130 MB (+10617kb) [00:07:49]
+// Elapsed time: 43 seconds
+selectButton(RDIResourceCommand.RDICommands_SETTINGS, "settings"); // B (f, cp)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// F (cp): Settings: addNotify
+// Elapsed time: 19 seconds
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (F)
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (F)
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Settings"); // F (cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("temp.v", 0, 279); // cl (w, cp)
+selectCodeEditor("temp.v", 1, 282); // cl (w, cp)
+selectCodeEditor("temp.v", 288, 230); // cl (w, cp)
+// Elapsed time: 70 seconds
+selectCodeEditor("temp.v", 16, 275); // cl (w, cp)
+selectCodeEditor("temp.v", 452, 401); // cl (w, cp)
+selectCodeEditor("temp.v", 217, 364); // cl (w, cp)
+selectCodeEditor("temp.v", 286, 332); // cl (w, cp)
+selectCodeEditor("temp.v", 152, 364); // cl (w, cp)
+selectCodeEditor("temp.v", 142, 380); // cl (w, cp)
+selectCodeEditor("temp.v", 245, 365); // cl (w, cp)
+selectCodeEditor("temp.v", 331, 364); // cl (w, cp)
+selectCodeEditor("temp.v", 367, 372); // cl (w, cp)
+selectCodeEditor("temp.v", 170, 324); // cl (w, cp)
+selectCodeEditor("temp.v", 302, 375); // cl (w, cp)
+// Elapsed time: 194 seconds
+selectCodeEditor("temp.v", 309, 325); // cl (w, cp)
+selectCodeEditor("temp.v", 337, 339); // cl (w, cp)
+// Elapsed time: 680 seconds
+selectCodeEditor("temp.v", 292, 405); // cl (w, cp)
+selectCodeEditor("temp.v", 329, 396); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("temp.v", 460, 276); // cl (w, cp)
+selectCodeEditor("temp.v", 421, 204); // cl (w, cp)
+selectCodeEditor("temp.v", 349, 260); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3903 ms.
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B

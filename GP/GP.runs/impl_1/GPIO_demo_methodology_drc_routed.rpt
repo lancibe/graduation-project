@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed Jan 11 20:52:37 2023
+| Date         : Mon Apr 10 16:30:11 2023
 | Host         : Sebastian running 64-bit major release  (build 9200)
 | Command      : report_methodology -file GPIO_demo_methodology_drc_routed.rpt -pb GPIO_demo_methodology_drc_routed.pb -rpx GPIO_demo_methodology_drc_routed.rpx
 | Design       : GPIO_demo
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 24
+             Violations found: 25
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| TIMING-18 | Warning  | Missing input or output delay | 24         |
+| TIMING-18 | Warning  | Missing input or output delay | 25         |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -144,10 +144,15 @@ Related violations: <none>
 
 TIMING-18#23 Warning
 Missing input or output delay  
-An output delay is missing on ampPWM relative to clock(s) sys_clk_pin
+An output delay is missing on UART_TXD relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#24 Warning
+Missing input or output delay  
+An output delay is missing on ampPWM relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#25 Warning
 Missing input or output delay  
 An output delay is missing on micClk relative to clock(s) sys_clk_pin
 Related violations: <none>

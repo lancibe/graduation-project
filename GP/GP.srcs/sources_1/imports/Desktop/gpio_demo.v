@@ -147,16 +147,16 @@ module GPIO_demo(SW, BTN, CLK, LED, SSEG_CA, SSEG_AN, UART_TXD, RGB1_Red, RGB1_G
         (btnReg[2] == 1'b0 & btnDeBnc[2] == 1'b1) | 
         (btnReg[3] == 1'b0 & btnDeBnc[3] == 1'b1))) ? 1'b1 : 1'b0;
    
-/* 
+ 
 //----------------------------------------------------------
 //------              UART Control                   -------
 //----------------------------------------------------------
    
-   Messages are sent on reset and when a button is pressed.
-   This counter holds the UART state machine in reset for ~2 milliseconds.
-   This will complete transmission of any byte that may have been initiated during
-   FPGA configuration due to the UART_TX line being pulled low, preventing a
-   frame shift error from occuring during the first message.
+//   Messages are sent on reset and when a button is pressed.
+//   This counter holds the UART state machine in reset for ~2 milliseconds.
+//   This will complete transmission of any byte that may have been initiated during
+ //  FPGA configuration due to the UART_TX line being pulled low, preventing a
+ //  frame shift error from occuring during the first message.
    
    always @(posedge CLK)
       
@@ -259,7 +259,7 @@ module GPIO_demo(SW, BTN, CLK, LED, SSEG_CA, SSEG_AN, UART_TXD, RGB1_Red, RGB1_G
        .READY(uartRdy), 
        .UART_TX(uartTX));
    
-   assign UART_TXD = uartTX;*/
+   assign UART_TXD = uartTX;
    
    //RGB LED control
 //   RGB_controller RGB_Core(
