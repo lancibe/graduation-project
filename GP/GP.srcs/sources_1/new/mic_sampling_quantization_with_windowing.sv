@@ -17,6 +17,7 @@ reg [7:0] sample_value;            // 存储采样值
 reg [7:0] frame [FRAME_SIZE-1:0];     // 存储采样帧数据
 reg [7:0] sub_frame [SUB_FRAME_SIZE-1:0];  // 存储当前子帧数据
 reg sub_frame_index = 0;           // 当前子帧索引
+reg [31:0] mfcc_features [11:0];  // 存储MFCC特征值
 
 // 实例化MFCC模块，将每个子帧作为输入
 mfcc_module mfcc_inst (
@@ -26,17 +27,20 @@ mfcc_module mfcc_inst (
     .mfcc_out(mfcc_features)
 );
 
-reg [31:0] mfcc_features [11:0];  // 存储MFCC特征值
+
 
 always @(posedge clk) begin
     if (reset) begin   // 如果重置信号为高电平，则清零采样值和输出信号
         sample_value <= 8'h00;
         sample_out <= 8'h00;
         sample_ready <= 1'b0;
-        frame <= {FRAME_SIZE{8'h00}};
-        sub_frame <= {SUB_FRAME_SIZE{8'h00}};
+        for(int i = 0 ; i < FRAME_SIZE ; i = i + 1)
+            frame[i] <= 0;
+        for(int i = 0 ; i < SUB_FRAME_SIZE ; i = i + 1)
+            sub_frame[i] <= 0;
         sub_frame_index <= 0;
-        mfcc_features <= {12{32'h00000000}};
+        for(int i = 0 ; i < 12 ; i = i + 1)
+            mfcc_features[i] <= 0;
     end else begin
         // 从话筒输入信号中进行采样，最后将其量化为 8 位数字信号
         sample_value <= mic_in;
@@ -49,8 +53,8 @@ always @(posedge clk) begin
         if (sub_frame_index == SUB_FRAME_SIZE - 1) begin   // 如果当前子帧存满了，执行加窗和分割操作
             if (HAMMING_WINDOW) begin   // 汉明窗处理
                 for (int i=0; i<SUB_FRAME_SIZE; i=i+1) begin
-                    sub_frame[i] <= (((int)frame[i] - 128) * 
-                                     (0.54 - 0.46 * $cos(2*3.1415926*i/(SUB_FRAME_SIZE-1)))) >> 6;
+                    sub_frame[i] <= $int(((frame[i]) - 128) * 
+                                     (0.54 - 0.46 * ($cos(2*3.1415926*i / (SUB_FRAME_SIZE-1))))) >> 6;
                 end
             end else begin   // 海宁窗处理
                 for (int i=0; i<SUB_FRAME_SIZE; i=i+1) begin
